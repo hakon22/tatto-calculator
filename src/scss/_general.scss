@@ -1,0 +1,127 @@
+@font-face {
+  font-weight: 400;
+  /* Соответствует значению normal */
+  font-family: Manrope;
+  src: url("../fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Manrope;
+  src: url("../fonts/Manrope-Medium.ttf");
+}
+
+@font-face {
+  font-weight: 600;
+  /* Соответствует значению "почти" bold )) */
+  font-family: Manrope;
+  src: url("../fonts/Manrope-SemiBold.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Constantine;
+  src: url("../fonts/Constantine.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: $purple;
+  background-color: $grey;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+}
+
+.container {
+  width: 91.6%;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1.18rem 4.32rem 1.82rem;
+  background-image: url('../images/services/bg-button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: $purple;
+
+  @include fonty(1.13rem, 600, 1.36em);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-line {
+  width: 31.5vw;
+  height: 0.26%;
+}
+
+h1 {
+  font-family: Constantine, sans-serif;
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  color: $dark;
+}
+
+@media (max-width: 1550px) {
+  html {
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .btn {
+    background-image: url('../images/services/bg-button-md.png');
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 15px;
+  }
+
+  .border-line {
+    width: 23.44vw;
+  }
+
+  .services {
+    @include m(bottom, 40);
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+
+  .btn {
+    width: 79%;
+  }
+
+  .container {
+    width: 81.25%;
+  }
+}

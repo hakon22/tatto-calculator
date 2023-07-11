@@ -1,0 +1,32 @@
+// шрифты
+
+@mixin fonty ($size: 22px, $weight: 400, $lineH: 30px) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineH;
+}
+
+// создать flex-контейнер и отцентрировать вложенные элементы
+
+@mixin flexy($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// на прошлом проекте часто нужно было отцентрировать блок или ограничивающий контейнер, поэтому:
+//ширину нужно передавать всегда при вызове с указанием единицы измерения
+
+@mixin centry($width) {
+    margin: 0 auto;
+    width: $width;
+}
+
+@mixin p($side, $px) { // внутренний отступ, например: @include p(top, 20) выведет в стилях 'padding-top: 20px';
+    padding-#{$side}: #{$px}px;
+}
+
+@mixin m($side, $px) {
+    margin-#{$side}: #{$px}px;
+}
