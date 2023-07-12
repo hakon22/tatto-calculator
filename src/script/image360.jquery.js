@@ -1,3 +1,6 @@
+// ищем кнопки в документе
+const buttons = document.querySelectorAll('.btn-calc');
+
 const rotate = (slide, classList) => { //функция подсчёта угла поворота кнопок
 	const isProfile = classList.contains('profile');
 	if (isProfile) {
@@ -35,16 +38,6 @@ const rotate = (slide, classList) => { //функция подсчёта угл�
 			index_img = 0, // индекс отображаемой картинки
 			last_perc = 0, // предыдущее положение курсора относительно блока в процентах
 			direction = true; // напавление движения мыши true - влево, false -  вправо
-
-			// ищем кнопки в документе
-			const buttons = document.querySelectorAll('.btn-calc');
-
-			// если профильные, ставим по умолчанию 90 градусов
-			buttons.forEach((button) => {
-				if (button.classList.contains('profile')) {
-					button.style.transform = 'rotateY(90deg)';
-				}
-			});
 						
 		var methods = {
 			
@@ -76,12 +69,16 @@ const rotate = (slide, classList) => { //функция подсчёта угл�
 					if(index_img > (count_imgs - 1)) index_img = 0;
 					// тут мы врезаемся в события jQuery и меняем поворот кнопок
 					// index_img + 1 потому что номер слайда тут считается индексом, а нам нужен номер
+
+					const slidePoints = [1, 2, 3, 7, 12, 13, 14, 19, 23, 24];
 					buttons.forEach((button) => {
 						const { classList } = button;
-						if (classList.contains('active')) {
+						if (classList.contains('active') && !slidePoints.includes(index_img + 1)) {
 							classList.remove('active', 'animate__heartBeat');
+							state.activeBlock.innerHTML = state.defaultBlock;
+							state.activeButton = document.createElement('a');
 						}
-						if ((classList.contains('throat') || classList.contains('breast')) && index_img > 10 && index_img < 16) {
+						if ((classList.contains('clavicle') || classList.contains('ribs')) && index_img > 10 && index_img < 16) {
 							return button.style.transform = `rotateY(${rotate(index_img + 1, classList)}deg) translateY(2vw)`;
 						}
 						button.style.transform = `rotateY(${rotate(index_img + 1, classList)}deg)`;
