@@ -357,7 +357,11 @@
 
     &__animation {
       order: 1;
-      width: 100%;
+      width: 70%;
+
+      #rotation img {
+        width: 100%;
+      }
 
       &__footer {
         display: none;

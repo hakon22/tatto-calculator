@@ -442,6 +442,9 @@ h1 {
   }
   .services__animation {
     order: 1;
+    width: 70%;
+  }
+  .services__animation #rotation img {
     width: 100%;
   }
   .services__animation__footer {
