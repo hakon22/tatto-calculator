@@ -47,10 +47,12 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  width: max-content;
   text-decoration: none;
-  padding: 1.18rem 4.32rem 1.82rem;
+  padding: 1.18rem 4.32rem;
   background-image: url("../images/services/bg-button.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #22082B;
   font-size: 1.13rem;
@@ -89,11 +91,10 @@ h1 {
     font-size: 14px;
   }
   .btn {
-    width: 100%;
     font-size: 1rem;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   html {
     font-size: 15px;
   }
@@ -107,9 +108,6 @@ h1 {
 @media (max-width: 320px) {
   html {
     font-size: 10px;
-  }
-  .btn {
-    width: 79%;
   }
   .container {
     width: 81.25%;
@@ -157,7 +155,7 @@ h1 {
 }
 .services__animation .btn-calc.ribs {
   top: 10.3vw;
-  left: calc(50% - 1.04vw);
+  left: calc(50.2% - 1.04vw);
 }
 .services__animation .btn-calc.left-hand-top {
   top: 8.6vw;
@@ -411,7 +409,7 @@ h1 {
   margin-right: 0.5rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .services__main {
     display: flex;
     flex-direction: column;
@@ -446,6 +444,114 @@ h1 {
   }
   .services__animation #rotation img {
     width: 100%;
+  }
+  .services__animation .btn-calc {
+    width: 4.08vw;
+    height: 4.08vw;
+  }
+  .services__animation .btn-calc.clavicle {
+    top: 23vw;
+    left: calc(50% - 2.04vw);
+  }
+  .services__animation .btn-calc.ribs {
+    top: 43.3vw;
+    left: calc(50.2% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-hand-top {
+    top: 34.6vw;
+    left: calc(70% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-hand-center {
+    top: 54.3vw;
+    left: calc(78% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-hand-bottom {
+    top: 69.3vw;
+    left: calc(87% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-hand-top {
+    top: 34.6vw;
+    left: calc(30% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-hand-center {
+    top: 54.3vw;
+    left: calc(23% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-hand-bottom {
+    top: 69.3vw;
+    left: calc(13% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-leg-top {
+    top: 19vw;
+    left: calc(61% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-leg-center {
+    top: 26vw;
+    left: calc(58% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-leg-bottom {
+    top: 32.3vw;
+    left: calc(56% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-leg-top {
+    top: 19vw;
+    left: calc(39% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-leg-center {
+    top: 26vw;
+    left: calc(42% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-leg-bottom {
+    top: 32.3vw;
+    left: calc(44% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-leg-profile-center {
+    top: 25vw;
+    left: calc(41% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-leg-profile-bottom {
+    top: 31.3vw;
+    left: calc(43% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-hand-profile-top {
+    top: 7.3vw;
+    left: calc(40% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-hand-profile-center {
+    top: 12.3vw;
+    left: calc(40% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-hand-profile-bottom {
+    top: 17.3vw;
+    left: calc(50% - 2.04vw);
+  }
+  .services__animation .btn-calc.right-stomach-profile {
+    top: 12.3vw;
+    left: calc(53% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-leg-profile-center {
+    top: 25vw;
+    left: calc(60% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-leg-profile-bottom {
+    top: 31.3vw;
+    left: calc(61% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-hand-profile-top {
+    top: 7.3vw;
+    left: calc(60% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-hand-profile-center {
+    top: 12.3vw;
+    left: calc(60% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-hand-profile-bottom {
+    top: 17.3vw;
+    left: calc(50% - 2.04vw);
+  }
+  .services__animation .btn-calc.left-stomach-profile {
+    top: 12.3vw;
+    left: calc(47% - 2.04vw);
   }
   .services__animation__footer {
     display: none;

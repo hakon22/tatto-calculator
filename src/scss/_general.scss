@@ -50,10 +50,12 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  width: max-content;
   text-decoration: none;
-  padding: 1.18rem 4.32rem 1.82rem;
+  padding: 1.18rem 4.32rem;
   background-image: url('../images/services/bg-button.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   color: $purple;
 
@@ -94,11 +96,10 @@ h1 {
   }
 
   .btn {
-    width: 100%;
     font-size: 1rem;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   html {
     font-size: 15px;
   }
@@ -115,10 +116,6 @@ h1 {
 @media (max-width: 320px) {
   html {
     font-size: 10px;
-  }
-
-  .btn {
-    width: 79%;
   }
 
   .container {
