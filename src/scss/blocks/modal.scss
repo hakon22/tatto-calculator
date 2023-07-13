@@ -1,7 +1,5 @@
 .modalBackground {
   display: none;
-  /* указываем z-индекс для корректного наслаивания */
-  z-index: 2;
 
   &::before {
     content: '';
@@ -25,7 +23,7 @@
   border-radius: 20px;
   background-color: $modalBgWindow;
   padding: 40px 20px;
-  z-index: 3;
+  z-index: 2;
   animation: 0.4s show ease;
 }
 

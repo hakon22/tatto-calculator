@@ -95,6 +95,11 @@ h2 {
   .services {
     margin-bottom: 40px;
   }
+  .btn {
+    display: block;
+    padding: 0.7rem 2.32rem;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 320px) {
   html {
@@ -611,11 +616,6 @@ h2 {
   .modalWindow .mt-18, .modalWindow .mb-15 {
     text-align: center;
   }
-  .modalWindow .btn {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-  }
 }
 @media (max-width: 320px) {
   .services__h2 {
@@ -627,8 +627,6 @@ h2 {
 }
 .modalBackground {
   display: none;
-  /* указываем z-индекс для корректного наслаивания */
-  z-index: 2;
 }
 .modalBackground::before {
   content: "";
@@ -651,7 +649,7 @@ h2 {
   border-radius: 20px;
   background-color: #d6cdd9;
   padding: 40px 20px;
-  z-index: 3;
+  z-index: 2;
   animation: 0.4s show ease;
 }
 
