@@ -1,7 +1,7 @@
 const createInfoBlock = (id) => {
   const slide = [...document.querySelectorAll('#rotation > img')];
   // получаем номер активного слайда
-  const activeSlide = slide.find((slide) => slide.style.display !== 'none').src.split(".")[0].split("/").pop();
+  const activeSlide = slide.find((slide) => slide.style.display !== 'none').id;
   const { name, price, time } = (activeSlide > 11 && activeSlide < 15)
     ? data.find((value) => value.ids.includes(`${id}-back`)).descriptions
     : data.find((value) => value.ids.includes(id)).descriptions;
@@ -28,7 +28,7 @@ const calculatorHandler = (selectors) => ({ target }) => {
 };
 
 const animationHandler = ({ target }) => {
-  const { activeButton, defaultBlock, activeModalBlock } = state;
+  const { activeButton, defaultBlock } = state;
   const activeBlock = window.screen.width > 768 ? state.activeBlock : state.activeModalBlock;
   if (window.screen.width <= 768) {
     modalBackground.style.display = 'block';
