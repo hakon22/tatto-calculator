@@ -30,8 +30,8 @@
 html {
   font-family: Manrope, sans-serif;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 1.15vw;
+  line-height: 1.36;
   color: #22082B;
   background-color: #f3f3f3;
   scroll-behavior: smooth;
@@ -72,20 +72,11 @@ body {
 h1 {
   font-family: Constantine, sans-serif;
   font-weight: 400;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   color: #3a3a42;
 }
 
-@media (max-width: 1550px) {
-  html {
-    font-size: 15px;
-    line-height: 1.25;
-  }
-  .btn {
-    background-image: url("../images/services/bg-button-md.png");
-  }
-}
 @media (max-width: 1280px) {
   html {
     font-size: 14px;
@@ -108,9 +99,6 @@ h1 {
 @media (max-width: 320px) {
   html {
     font-size: 10px;
-  }
-  .container {
-    width: 81.25%;
   }
 }
 .services {
@@ -263,7 +251,8 @@ h1 {
   line-height: 17.12px;
 }
 .services__h2 {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+  margin-top: 25px;
 }
 .services__main {
   display: flex;
@@ -276,7 +265,7 @@ h1 {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.07em;
-  padding-top: 55px;
+  padding-top: 35px;
 }
 .services__main__left-column__pain-points {
   font-weight: 600;
@@ -291,7 +280,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: bottom;
+  align-items: center;
   margin-top: 6px;
 }
 .services__main__right-column {
@@ -299,7 +288,7 @@ h1 {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.36em;
-  padding-top: 55px;
+  padding-top: 35px;
 }
 .services__main__right-column .mt-18 {
   margin-top: 18px;
@@ -311,7 +300,7 @@ h1 {
   margin-top: 36px;
 }
 .services__main__right-column .mb-15 {
-  margin-bottom: calc(15px + 1.18rem);
+  margin-bottom: 15px;
 }
 .services__main__right-column .h2 {
   font-size: 1rem;
@@ -446,112 +435,112 @@ h1 {
     width: 100%;
   }
   .services__animation .btn-calc {
-    width: 4.08vw;
-    height: 4.08vw;
+    width: 6.88vw;
+    height: 6.88vw;
   }
   .services__animation .btn-calc.clavicle {
     top: 23vw;
-    left: calc(50% - 2.04vw);
+    left: calc(50% - 3.44vw);
   }
   .services__animation .btn-calc.ribs {
-    top: 43.3vw;
-    left: calc(50.2% - 2.04vw);
+    top: 41.3vw;
+    left: calc(50.2% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-top {
     top: 34.6vw;
-    left: calc(70% - 2.04vw);
+    left: calc(69% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-center {
-    top: 54.3vw;
-    left: calc(78% - 2.04vw);
+    top: 51vw;
+    left: calc(76% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-bottom {
-    top: 69.3vw;
-    left: calc(87% - 2.04vw);
+    top: 68vw;
+    left: calc(87% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-top {
     top: 34.6vw;
-    left: calc(30% - 2.04vw);
+    left: calc(31% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-center {
-    top: 54.3vw;
-    left: calc(23% - 2.04vw);
+    top: 51vw;
+    left: calc(24% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-bottom {
-    top: 69.3vw;
-    left: calc(13% - 2.04vw);
+    top: 68vw;
+    left: calc(13% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-top {
-    top: 19vw;
-    left: calc(61% - 2.04vw);
+    top: 73vw;
+    left: calc(61% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-center {
-    top: 26vw;
-    left: calc(58% - 2.04vw);
+    top: 100vw;
+    left: calc(58% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-bottom {
-    top: 32.3vw;
-    left: calc(56% - 2.04vw);
+    top: 125vw;
+    left: calc(56% - 3.44vw);
   }
   .services__animation .btn-calc.right-leg-top {
-    top: 19vw;
-    left: calc(39% - 2.04vw);
+    top: 73vw;
+    left: calc(39% - 3.44vw);
   }
   .services__animation .btn-calc.right-leg-center {
-    top: 26vw;
-    left: calc(42% - 2.04vw);
+    top: 100vw;
+    left: calc(42% - 3.44vw);
   }
   .services__animation .btn-calc.right-leg-bottom {
-    top: 32.3vw;
-    left: calc(44% - 2.04vw);
+    top: 125vw;
+    left: calc(44% - 3.44vw);
   }
   .services__animation .btn-calc.right-leg-profile-center {
-    top: 25vw;
-    left: calc(41% - 2.04vw);
+    top: 100vw;
+    left: calc(41% - 3.44vw);
   }
   .services__animation .btn-calc.right-leg-profile-bottom {
-    top: 31.3vw;
-    left: calc(43% - 2.04vw);
+    top: 125vw;
+    left: calc(43% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-profile-top {
-    top: 7.3vw;
-    left: calc(40% - 2.04vw);
+    top: 55.3vw;
+    left: calc(40% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-profile-center {
     top: 12.3vw;
-    left: calc(40% - 2.04vw);
+    left: calc(40% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-profile-bottom {
     top: 17.3vw;
-    left: calc(50% - 2.04vw);
+    left: calc(50% - 3.44vw);
   }
   .services__animation .btn-calc.right-stomach-profile {
     top: 12.3vw;
-    left: calc(53% - 2.04vw);
+    left: calc(53% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-profile-center {
-    top: 25vw;
-    left: calc(60% - 2.04vw);
+    top: 100vw;
+    left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-profile-bottom {
-    top: 31.3vw;
-    left: calc(61% - 2.04vw);
+    top: 125vw;
+    left: calc(61% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-profile-top {
     top: 7.3vw;
-    left: calc(60% - 2.04vw);
+    left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-profile-center {
     top: 12.3vw;
-    left: calc(60% - 2.04vw);
+    left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-profile-bottom {
     top: 17.3vw;
-    left: calc(50% - 2.04vw);
+    left: calc(50% - 3.44vw);
   }
   .services__animation .btn-calc.left-stomach-profile {
     top: 12.3vw;
-    left: calc(47% - 2.04vw);
+    left: calc(47% - 3.44vw);
   }
   .services__animation__footer {
     display: none;
@@ -560,17 +549,9 @@ h1 {
 @media (max-width: 320px) {
   .services__h2 {
     display: block;
-    font-size: 12px;
-    line-height: 12.6px;
-    margin: 0 auto;
-    width: 202px;
+    font-size: 1.2em;
+    line-height: 1.1;
     margin-bottom: 17.5px;
-  }
-  .services__animation {
-    width: 183px;
-  }
-  .services__animation #rotation img {
-    width: 100%;
   }
 }
 

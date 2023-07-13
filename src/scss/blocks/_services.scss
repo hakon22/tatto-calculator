@@ -178,7 +178,8 @@
   }
 
   &__h2 {
-    @include m(bottom, 50);
+    @include m(bottom, 45);
+    @include m(top, 25);
   }
 
   &__main {
@@ -187,7 +188,7 @@
     &__left-column {
       width: 36.19%;
       @include fonty(0.9rem, 400, 1.07em);
-      @include p(top, 55);
+      @include p(top, 35);
 
       &__pain-points {
         font-weight: 600;
@@ -200,7 +201,7 @@
         }
 
         .pain-points__text {
-          @include flexy(row, space-between, bottom);
+          @include flexy(row, space-between, center);
           @include m(top, 6);
         }
       }
@@ -209,7 +210,7 @@
     &__right-column {
       width: 33.81%;
       @include fonty(0.9rem, 400, 1.36em);
-      @include p(top, 55);
+      @include p(top, 35);
   
       .mt-18 {
         @include m(top, 18);
@@ -224,7 +225,7 @@
       }
   
       .mb-15 {
-        margin-bottom: calc(15px + 1.18rem);
+        margin-bottom: 15px;
       }
   
       .h2 {
@@ -364,137 +365,137 @@
       }
 
       .btn-calc {
-        width: 4.08vw;
-        height: 4.08vw;
+        width: 6.88vw;
+        height: 6.88vw;
     
         &.clavicle {
           top: 23vw;
-          left: calc(50% - (4.08vw / 2));
+          left: calc(50% - (6.88vw / 2));
         }
   
         &.ribs {
-          top: 43.3vw;
-          left: calc(50.2% - (4.08vw / 2));
+          top: 41.3vw;
+          left: calc(50.2% - (6.88vw / 2));
         }
   
         &.left-hand-top {
           top: 34.6vw;
-          left: calc(70% - (4.08vw / 2));
+          left: calc(69% - (6.88vw / 2));
         }
   
         &.left-hand-center {
-          top: 54.3vw;
-          left: calc(78% - (4.08vw / 2));
+          top: 51vw;
+          left: calc(76% - (6.88vw / 2));
         }
   
         &.left-hand-bottom {
-          top: 69.3vw;
-          left: calc(87% - (4.08vw / 2));
+          top: 68vw;
+          left: calc(87% - (6.88vw / 2));
         }
   
         &.right-hand-top {
           top: 34.6vw;
-          left: calc(30% - (4.08vw / 2));
+          left: calc(31% - (6.88vw / 2));
         }
   
         &.right-hand-center {
-          top: 54.3vw;
-          left: calc(23% - (4.08vw / 2));
+          top: 51vw;
+          left: calc(24% - (6.88vw / 2));
         }
   
         &.right-hand-bottom {
-          top: 69.3vw;
-          left: calc(13% - (4.08vw / 2));
+          top: 68vw;
+          left: calc(13% - (6.88vw / 2));
         }
   
         &.left-leg-top {
-          top: 19vw;
-          left: calc(61% - (4.08vw / 2));
+          top: 73vw;
+          left: calc(61% - (6.88vw / 2));
         }
   
         &.left-leg-center {
-          top: 26vw;
-          left: calc(58% - (4.08vw / 2));
+          top: 100vw;
+          left: calc(58% - (6.88vw / 2));
         }
   
         &.left-leg-bottom {
-          top: 32.3vw;
-          left: calc(56% - (4.08vw / 2));
+          top: 125vw;
+          left: calc(56% - (6.88vw / 2));
         }
   
         &.right-leg-top {
-          top: 19vw;
-          left: calc(39% - (4.08vw / 2));
+          top: 73vw;
+          left: calc(39% - (6.88vw / 2));
         }
   
         &.right-leg-center {
-          top: 26vw;
-          left: calc(42% - (4.08vw / 2));
+          top: 100vw;
+          left: calc(42% - (6.88vw / 2));
         }
   
         &.right-leg-bottom {
-          top: 32.3vw;
-          left: calc(44% - (4.08vw / 2));
+          top: 125vw;
+          left: calc(44% - (6.88vw / 2));
         }
   
         &.right-leg-profile-center {
-          top: 25vw;
-          left: calc(41% - (4.08vw / 2));
+          top: 100vw;
+          left: calc(41% - (6.88vw / 2));
         }
   
         &.right-leg-profile-bottom {
-          top: 31.3vw;
-          left: calc(43% - (4.08vw / 2));
+          top: 125vw;
+          left: calc(43% - (6.88vw / 2));
         }
   
         &.right-hand-profile-top {
-          top: 7.3vw;
-          left: calc(40% - (4.08vw / 2));
+          top: 55.3vw;
+          left: calc(40% - (6.88vw / 2));
         }
   
         &.right-hand-profile-center {
           top: 12.3vw;
-          left: calc(40% - (4.08vw / 2));
+          left: calc(40% - (6.88vw / 2));
         }
   
         &.right-hand-profile-bottom {
           top: 17.3vw;
-          left: calc(50% - (4.08vw / 2));
+          left: calc(50% - (6.88vw / 2));
         }
   
         &.right-stomach-profile {
           top: 12.3vw;
-          left: calc(53% - (4.08vw / 2));
+          left: calc(53% - (6.88vw / 2));
         }
   
         &.left-leg-profile-center {
-          top: 25vw;
-          left: calc(60% - (4.08vw / 2));
+          top: 100vw;
+          left: calc(60% - (6.88vw / 2));
         }
   
         &.left-leg-profile-bottom {
-          top: 31.3vw;
-          left: calc(61% - (4.08vw / 2));
+          top: 125vw;
+          left: calc(61% - (6.88vw / 2));
         }
   
         &.left-hand-profile-top {
           top: 7.3vw;
-          left: calc(60% - (4.08vw / 2));
+          left: calc(60% - (6.88vw / 2));
         }
   
         &.left-hand-profile-center {
           top: 12.3vw;
-          left: calc(60% - (4.08vw / 2));
+          left: calc(60% - (6.88vw / 2));
         }
   
         &.left-hand-profile-bottom {
           top: 17.3vw;
-          left: calc(50% - (4.08vw / 2));
+          left: calc(50% - (6.88vw / 2));
         }
   
         &.left-stomach-profile {
           top: 12.3vw;
-          left: calc(47% - (4.08vw / 2));
+          left: calc(47% - (6.88vw / 2));
         }
       }
 
@@ -511,19 +512,10 @@
 
     &__h2 {
       display: block;
-      font-size: 12px;
-      line-height: 12.6px;
+      font-size: 1.2em;
+      line-height: 1.1;
 
-      @include centry(202px);
       @include m(bottom, 17.5);
-    }
-
-    &__animation {
-      width: 183px;
-
-      #rotation img {
-        width: 100%;
-      }
     }
   }
 }
