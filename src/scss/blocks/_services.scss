@@ -529,6 +529,7 @@
 
       p {
         @include flexy(row, start, center);
+          margin-top: 1em;
 
         &::before {
           content: '';
