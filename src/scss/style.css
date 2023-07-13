@@ -277,62 +277,75 @@ h1 {
   width: 100%;
 }
 .services__main__left-column__pain-points .pain-points__text {
+  font-size: 0.8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 6px;
 }
-.services__main__right-column {
+
+.services__main__right-column,
+.modalWindow {
   width: 33.81%;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.36em;
   padding-top: 35px;
 }
-.services__main__right-column .mt-18 {
+.services__main__right-column .mt-18,
+.modalWindow .mt-18 {
   margin-top: 18px;
 }
-.services__main__right-column .mt-13 {
+.services__main__right-column .mt-13,
+.modalWindow .mt-13 {
   margin-top: 13px;
 }
-.services__main__right-column .mt-36 {
+.services__main__right-column .mt-36,
+.modalWindow .mt-36 {
   margin-top: 36px;
 }
-.services__main__right-column .mb-15 {
+.services__main__right-column .mb-15,
+.modalWindow .mb-15 {
   margin-bottom: 15px;
 }
-.services__main__right-column .h2 {
+.services__main__right-column .h2,
+.modalWindow .h2 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.36em;
 }
-.services__main__right-column .calculator {
+.services__main__right-column .calculator,
+.modalWindow .calculator {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: unset;
   row-gap: 0.7rem;
 }
-.services__main__right-column .calculator .h3 {
+.services__main__right-column .calculator .h3,
+.modalWindow .calculator .h3 {
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.35;
 }
-.services__main__right-column .calculator__calc {
+.services__main__right-column .calculator__calc,
+.modalWindow .calculator__calc {
   margin-bottom: 0.7rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
 }
-.services__main__right-column .calculator__calc-header {
+.services__main__right-column .calculator__calc-header,
+.modalWindow .calculator__calc-header {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
-.services__main__right-column .calculator__calc-header::before {
+.services__main__right-column .calculator__calc-header::before,
+.modalWindow .calculator__calc-header::before {
   content: "";
   display: block;
   position: relative;
@@ -344,11 +357,13 @@ h1 {
   margin-right: 0.5rem;
   bottom: 0.45vw;
 }
-.services__main__right-column .calculator__calc-header p {
+.services__main__right-column .calculator__calc-header p,
+.modalWindow .calculator__calc-header p {
   margin-top: 1.1vw;
   margin-bottom: 0.75rem;
 }
-.services__main__right-column .calculator__calc ul {
+.services__main__right-column .calculator__calc ul,
+.modalWindow .calculator__calc ul {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -358,20 +373,24 @@ h1 {
   line-height: 1.35;
   column-gap: 1.33em;
 }
-.services__main__right-column .calculator__calc ul .active {
+.services__main__right-column .calculator__calc ul .active,
+.modalWindow .calculator__calc ul .active {
   border-bottom: 2px solid #825890;
 }
-.services__main__right-column .calculator__calc ul li {
+.services__main__right-column .calculator__calc ul li,
+.modalWindow .calculator__calc ul li {
   list-style-type: none;
   cursor: pointer;
 }
-.services__main__right-column .calculator__price {
+.services__main__right-column .calculator__price,
+.modalWindow .calculator__price {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
-.services__main__right-column .calculator__price::before {
+.services__main__right-column .calculator__price::before,
+.modalWindow .calculator__price::before {
   content: "";
   display: block;
   background-image: url("../images/services/price.png");
@@ -381,13 +400,15 @@ h1 {
   height: 2.2vw;
   margin-right: 0.5rem;
 }
-.services__main__right-column .calculator__time {
+.services__main__right-column .calculator__time,
+.modalWindow .calculator__time {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
-.services__main__right-column .calculator__time::before {
+.services__main__right-column .calculator__time::before,
+.modalWindow .calculator__time::before {
   content: "";
   display: block;
   background-image: url("../images/services/time.png");
@@ -499,23 +520,23 @@ h1 {
     left: calc(41% - 3.44vw);
   }
   .services__animation .btn-calc.right-leg-profile-bottom {
-    top: 125vw;
-    left: calc(43% - 3.44vw);
+    top: 123vw;
+    left: calc(40% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-profile-top {
-    top: 55.3vw;
+    top: 30vw;
     left: calc(40% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-profile-center {
-    top: 12.3vw;
+    top: 48vw;
     left: calc(40% - 3.44vw);
   }
   .services__animation .btn-calc.right-hand-profile-bottom {
-    top: 17.3vw;
+    top: 67vw;
     left: calc(50% - 3.44vw);
   }
   .services__animation .btn-calc.right-stomach-profile {
-    top: 12.3vw;
+    top: 48vw;
     left: calc(53% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-profile-center {
@@ -523,27 +544,75 @@ h1 {
     left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-leg-profile-bottom {
-    top: 125vw;
-    left: calc(61% - 3.44vw);
+    top: 123vw;
+    left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-profile-top {
-    top: 7.3vw;
+    top: 30vw;
     left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-profile-center {
-    top: 12.3vw;
+    top: 48vw;
     left: calc(60% - 3.44vw);
   }
   .services__animation .btn-calc.left-hand-profile-bottom {
-    top: 17.3vw;
+    top: 67vw;
     left: calc(50% - 3.44vw);
   }
   .services__animation .btn-calc.left-stomach-profile {
-    top: 12.3vw;
+    top: 48vw;
     left: calc(47% - 3.44vw);
   }
   .services__animation__footer {
     display: none;
+  }
+  .modalWindow {
+    width: 100%;
+    padding-top: 0;
+    line-height: 1.5;
+  }
+  .modalWindow .mt-13 {
+    margin-top: 8px;
+  }
+  .modalWindow .calculator {
+    font-size: 1.2em;
+  }
+  .modalWindow .calculator__calc-header {
+    display: block;
+  }
+  .modalWindow .calculator__calc-header::before {
+    content: none;
+  }
+  .modalWindow .calculator__calc-header p {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .modalWindow .calculator__calc-header p::before {
+    content: "";
+    display: block;
+    background-image: url("../images/services/size.png");
+    background-size: cover;
+    background-position: center;
+    width: 5vw;
+    height: 5vw;
+    margin-right: 0.5rem;
+  }
+  .modalWindow .calculator__price::before {
+    width: 5vw;
+    height: 5vw;
+  }
+  .modalWindow .calculator__time::before {
+    width: 5vw;
+    height: 5vw;
+  }
+  .modalWindow .mt-18, .modalWindow .mb-15 {
+    text-align: center;
+  }
+  .modalWindow .btn {
+    display: block;
+    margin: 0 auto;
   }
 }
 @media (max-width: 320px) {
@@ -552,6 +621,69 @@ h1 {
     font-size: 1.2em;
     line-height: 1.1;
     margin-bottom: 17.5px;
+  }
+}
+.modalBackground {
+  display: none;
+  /* указываем z-индекс для корректного наслаивания */
+  z-index: 2;
+}
+.modalBackground::before {
+  content: "";
+  background: #e2e2e2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+/* позиционирование самого модального окна */
+.modalActive {
+  position: absolute;
+  width: 81.25%;
+  height: max-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: #d6cdd9;
+  padding: 40px 20px;
+  z-index: 3;
+  animation: 0.4s show ease;
+}
+
+/* кнопочка закрытия модального окна */
+.modalClose {
+  position: absolute;
+  background-image: url("../images/services/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 17px;
+  top: 17px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+/* сама картинка кнопочки закрытия */
+.modalClose img {
+  margin: 3px;
+  width: 24px;
+  height: 24px;
+}
+
+/* делаем позиционирование внутренних элементов относительно модального окна */
+.modalWindow {
+  position: relative;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

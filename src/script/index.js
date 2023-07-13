@@ -9,7 +9,7 @@ const createInfoBlock = (id) => {
 };
 
 const calculatorHandler = (selectors) => ({ target }) => {
-  const { activeBlock } = state;
+  const activeBlock  = window.screen.width > 768 ? state.activeBlock : state.activeModalBlock;
   if (target.classList.contains('active')) {
     return;
   } else {
@@ -28,7 +28,11 @@ const calculatorHandler = (selectors) => ({ target }) => {
 };
 
 const animationHandler = ({ target }) => {
-  const { activeBlock, activeButton, defaultBlock } = state;
+  const { activeButton, defaultBlock, activeModalBlock } = state;
+  const activeBlock = window.screen.width > 768 ? state.activeBlock : state.activeModalBlock;
+  if (window.screen.width <= 768) {
+    modalBackground.style.display = 'block';
+  }
   if (activeButton.id !== target.id) {
     if (activeButton.classList.contains('active')) {
       activeButton.classList.remove('active', 'animate__heartBeat');
@@ -42,11 +46,28 @@ const animationHandler = ({ target }) => {
       button.addEventListener('click', calculatorHandler(selectors));
     });
   } else {
-    activeBlock.innerHTML = defaultBlock;
+    if (window.screen.width > 768) {
+      activeBlock.innerHTML = defaultBlock;
+    }
     activeButton.classList.remove('active', 'animate__heartBeat');
     state.activeButton = document.createElement('a');
   }
 };
+
+const bodyElementHTML = document.querySelector('body');
+const modalBackground = document.querySelector('.modalBackground');
+const modalClose = document.querySelector('.modalClose');
+const modalActive = document.querySelector('.modalActive');
+
+[modalClose, modalBackground].forEach((modal) => {
+  modal.addEventListener('click', ({  target }) => {
+    if (target === modalBackground || target === modalClose) {
+        modalBackground.style.display = 'none';
+        state.activeButton.classList.remove('active', 'animate__heartBeat');
+        state.activeButton = document.createElement('a');
+    }
+  });
+});
 
 buttons.forEach((button) => {
   // если профильные, ставим по умолчанию 90 градусов

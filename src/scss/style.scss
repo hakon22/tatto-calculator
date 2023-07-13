@@ -1,4 +1,5 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "general.scss";
+@import "./variables";
+@import "./mixins";
+@import "./general";
 @import "./blocks/services";
+@import "./blocks/modal";
