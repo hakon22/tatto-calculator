@@ -2,7 +2,7 @@ const createInfoBlock = (id) => {
   const slide = [...document.querySelectorAll('#rotation > img')];
   // получаем номер активного слайда
   const activeSlide = slide.find((slide) => slide.style.display !== 'none').src.split(".")[0].split("/").pop();
-  const { name, price, time } = (activeSlide > 11 && activeSlide < 14)
+  const { name, price, time } = (activeSlide > 11 && activeSlide < 15)
     ? data.find((value) => value.ids.includes(`${id}-back`)).descriptions
     : data.find((value) => value.ids.includes(id)).descriptions;
   return renderCalcBlock(name, price, time);
@@ -54,7 +54,6 @@ const animationHandler = ({ target }) => {
   }
 };
 
-const bodyElementHTML = document.querySelector('body');
 const modalBackground = document.querySelector('.modalBackground');
 const modalClose = document.querySelector('.modalClose');
 const modalActive = document.querySelector('.modalActive');

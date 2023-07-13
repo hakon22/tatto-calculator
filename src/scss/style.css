@@ -640,7 +640,7 @@ h2 {
 
 /* позиционирование самого модального окна */
 .modalActive {
-  position: absolute;
+  position: fixed;
   width: 81.25%;
   height: max-content;
   left: 50%;
