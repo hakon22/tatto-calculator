@@ -1,7 +1,7 @@
 const createInfoBlock = (id) => {
-  const slide = [...document.querySelectorAll('#rotation > img')];
+  const slides = [...document.querySelectorAll('#rotation > img')];
   // получаем номер активного слайда
-  const activeSlide = slide.find((slide) => slide.style.display !== 'none').id;
+  const activeSlide = slides.find((slide) => slide.style.display !== 'none').id;
   const { name, price, time } = (activeSlide > 11 && activeSlide < 15)
     ? data.find((value) => value.ids.includes(`${id}-back`)).descriptions
     : data.find((value) => value.ids.includes(id)).descriptions;
@@ -76,4 +76,58 @@ buttons.forEach((button) => {
     button.style.transform = 'rotateY(90deg)';
   }
   button.addEventListener('click', animationHandler);
+});
+
+// функция добавления изображения на страницу после полной загрузки
+const preloadImages = (array) => {
+  if (!preloadImages.list) {
+      preloadImages.list = [];
+  }
+  const list = preloadImages.list;
+  for (let i = 0; i < array.length; i++) {
+      const img = new Image();
+      img.onload = () => {
+          const index = list.indexOf(this);
+          if (index !== -1) {
+              list.splice(index, 1);
+          }
+      }
+      list.push(img);
+      img.src = array[i];
+      img.id = i + 1;
+      document.querySelector('#rotation').append(img);
+  }
+};
+
+preloadImages([
+  "./src/images/services/1.jpg",
+  "./src/images/services/2.jpg",
+  "./src/images/services/3.jpg",
+  "./src/images/services/4.jpg",
+  "./src/images/services/5.jpg",
+  "./src/images/services/6.jpg",
+  "./src/images/services/7.jpg",
+  "./src/images/services/8.jpg",
+  "./src/images/services/9.jpg",
+  "./src/images/services/10.jpg",
+  "./src/images/services/11.jpg",
+  "./src/images/services/12.jpg",
+  "./src/images/services/13.jpg",
+  "./src/images/services/14.jpg",
+  "./src/images/services/15.jpg",
+  "./src/images/services/16.jpg",
+  "./src/images/services/17.jpg",
+  "./src/images/services/18.jpg",
+  "./src/images/services/19.jpg",
+  "./src/images/services/20.jpg",
+  "./src/images/services/21.jpg",
+  "./src/images/services/22.jpg",
+  "./src/images/services/23.jpg",
+  "./src/images/services/24.jpg",
+]);
+
+window.addEventListener("load", () => {
+  $(document).ready(function () {
+    $("#rotation").image360();
+  });
 });
