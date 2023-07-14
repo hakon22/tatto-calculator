@@ -32,6 +32,7 @@ const animationHandler = ({ target }) => {
   const activeBlock = window.screen.width > 768 ? state.activeBlock : state.activeModalBlock;
   if (window.screen.width <= 768) {
     modalBackground.style.display = 'block';
+    modalBackground.parentElement.style.overflow = 'hidden';
   }
   if (activeButton.id !== target.id) {
     if (activeButton.classList.contains('active')) {
@@ -62,6 +63,7 @@ const modalActive = document.querySelector('.modalActive');
   modal.addEventListener('click', ({  target }) => {
     if (target === modalBackground || target === modalClose) {
         modalBackground.style.display = 'none';
+        modalBackground.parentElement.style.overflow = '';
         state.activeButton.classList.remove('active', 'animate__heartBeat');
         state.activeButton = document.createElement('a');
     }
