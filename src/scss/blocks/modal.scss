@@ -10,45 +10,44 @@
     opacity: 0.7;
     z-index: 2;
   }
-}
 
-/* позиционирование самого модального окна */
-.modalActive {
-  position: fixed;
-  display: block;
-  width: 81.25%;
-  max-height: 90vh;
-  overflow: scroll;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  border-radius: 20px;
-  background-color: $modalBgWindow;
-  padding: 40px 20px;
-  z-index: 3;
-  animation: 0.4s show ease;
-  -webkit-animation: 0.4s show ease;
-  -o-animation:  0.4s show ease;
-}
+  /* позиционирование самого модального окна */
+  .modalActive {
+    position: fixed;
+    display: block;
+    width: 81.25%;
+    max-height: 90vh;
+    overflow: scroll;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: $modalBgWindow;
+    padding: 40px 20px;
+    z-index: 3;
+    animation: 0.4s show ease;
+    -webkit-animation: 0.4s show ease;
+    -o-animation:  0.4s show ease;
 
-/* кнопочка закрытия модального окна */
-.modalClose {
-  position: absolute;
-  background-image: url('../images/services/close.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  right: 17px;
-  top: 17px;
-  width: 17px;
-  height: 17px;
-  cursor: pointer;
-}
+    /* кнопочка закрытия модального окна */
+    .modalClose {
+      position: absolute;
+      background-image: url('../images/services/close.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 17px;
+      top: 17px;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+    }
 
-/* делаем позиционирование внутренних элементов относительно модального окна */
-.modalWindow {
-  position: relative;
+    .modalWindow {
+      position: relative;
+    }
+  }
 }
 
 @keyframes show {

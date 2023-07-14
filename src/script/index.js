@@ -33,6 +33,7 @@ const animationHandler = ({ target }) => {
   if (window.screen.width <= 768) {
     modalBackground.style.display = 'block';
     modalBackground.parentElement.style.overflow = 'hidden';
+    buttons.forEach((button) => button.style.visibility = 'hidden');
   }
   if (activeButton.id !== target.id) {
     if (activeButton.classList.contains('active')) {
@@ -64,6 +65,7 @@ const modalActive = document.querySelector('.modalActive');
     if (target === modalBackground || target === modalClose) {
         modalBackground.style.display = 'none';
         modalBackground.parentElement.style.overflow = '';
+        buttons.forEach((button) => button.style.visibility = 'visible');
         state.activeButton.classList.remove('active', 'animate__heartBeat');
         state.activeButton = document.createElement('a');
     }

@@ -629,6 +629,7 @@ h2 {
 }
 .modalBackground {
   display: none;
+  /* позиционирование самого модального окна */
 }
 .modalBackground::before {
   content: "";
@@ -639,9 +640,7 @@ h2 {
   opacity: 0.7;
   z-index: 2;
 }
-
-/* позиционирование самого модального окна */
-.modalActive {
+.modalBackground .modalActive {
   position: fixed;
   display: block;
   width: 81.25%;
@@ -659,10 +658,9 @@ h2 {
   animation: 0.4s show ease;
   -webkit-animation: 0.4s show ease;
   -o-animation: 0.4s show ease;
+  /* кнопочка закрытия модального окна */
 }
-
-/* кнопочка закрытия модального окна */
-.modalClose {
+.modalBackground .modalActive .modalClose {
   position: absolute;
   background-image: url("../images/services/close.svg");
   background-repeat: no-repeat;
@@ -673,9 +671,7 @@ h2 {
   height: 17px;
   cursor: pointer;
 }
-
-/* делаем позиционирование внутренних элементов относительно модального окна */
-.modalWindow {
+.modalBackground .modalActive .modalWindow {
   position: relative;
 }
 
