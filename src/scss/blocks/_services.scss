@@ -21,6 +21,7 @@
 // точки на картинке
     .btn-calc {
       position: absolute;
+      visibility: visible;
       cursor: pointer;
       width: 2.08vw;
       height: 2.08vw;
@@ -84,7 +85,7 @@
       }
 
       &.left-leg-bottom {
-        top: 32.3vw;
+        top: 31.5vw;
         left: calc(56% - (2.08vw / 2));
       }
 
@@ -99,7 +100,7 @@
       }
 
       &.right-leg-bottom {
-        top: 32.3vw;
+        top: 31.5vw;
         left: calc(44% - (2.08vw / 2));
       }
 

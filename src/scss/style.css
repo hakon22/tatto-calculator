@@ -132,6 +132,7 @@ h2 {
 }
 .services__animation .btn-calc {
   position: absolute;
+  visibility: visible;
   cursor: pointer;
   width: 2.08vw;
   height: 2.08vw;
@@ -184,7 +185,7 @@ h2 {
   left: calc(58% - 1.04vw);
 }
 .services__animation .btn-calc.left-leg-bottom {
-  top: 32.3vw;
+  top: 31.5vw;
   left: calc(56% - 1.04vw);
 }
 .services__animation .btn-calc.right-leg-top {
@@ -196,7 +197,7 @@ h2 {
   left: calc(42% - 1.04vw);
 }
 .services__animation .btn-calc.right-leg-bottom {
-  top: 32.3vw;
+  top: 31.5vw;
   left: calc(44% - 1.04vw);
 }
 .services__animation .btn-calc.right-leg-profile-center {

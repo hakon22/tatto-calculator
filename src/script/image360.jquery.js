@@ -79,7 +79,9 @@ const rotate = (slide, classList) => { //функция подсчёта угл�
 							state.activeButton = document.createElement('a');
 						}
 						if ((classList.contains('clavicle') || classList.contains('ribs')) && index_img > 10 && index_img < 16) {
-							return button.style.transform = `rotateY(${rotate(index_img + 1, classList)}deg) translateY(2vw)`;
+							return window.screen.width > 768
+							? button.style.transform = `rotateY(${rotate(index_img + 1, classList)}deg) translateY(2vw)`
+							: button.style.transform = `rotateY(${rotate(index_img + 1, classList)}deg) translateY(6vw)`;
 						}
 						button.style.transform = `rotateY(${rotate(index_img + 1, classList)}deg)`;
 					});
