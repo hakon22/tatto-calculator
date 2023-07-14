@@ -20,11 +20,15 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   border-radius: 20px;
   background-color: $modalBgWindow;
   padding: 40px 20px;
-  z-index: 2;
+  z-index: 3;
   animation: 0.4s show ease;
+  -webkit-animation: 0.4s show ease;
+  -o-animation:  0.4s show ease;
 }
 
 /* кнопочка закрытия модального окна */
@@ -53,6 +57,10 @@
 }
 
 @keyframes show {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -138,6 +138,7 @@ h2 {
   background-image: url("../images/services/point.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 .services__animation .btn-calc.active {
   background-image: url("../images/services/cursor.png");
@@ -251,9 +252,9 @@ h2 {
 }
 .services__animation__footer .services__h2 {
   font-family: Constantine, sans-serif;
-  font-size: 16px;
+  font-size: 1.37rem;
   font-weight: 400;
-  line-height: 17.12px;
+  line-height: 1.07;
 }
 .services__h2 {
   margin-bottom: 45px;
@@ -360,7 +361,7 @@ h2 {
   width: 2.2vw;
   height: 2.2vw;
   margin-right: 0.5rem;
-  bottom: 0.45vw;
+  bottom: 0.6vw;
 }
 .services__main__right-column .calculator__calc-header p,
 .modalWindow .calculator__calc-header p {
@@ -381,6 +382,7 @@ h2 {
 .services__main__right-column .calculator__calc ul .active,
 .modalWindow .calculator__calc ul .active {
   border-bottom: 2px solid #825890;
+  font-size: 1.2em;
 }
 .services__main__right-column .calculator__calc ul li,
 .modalWindow .calculator__calc ul li {
@@ -646,11 +648,15 @@ h2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   border-radius: 20px;
   background-color: #d6cdd9;
   padding: 40px 20px;
-  z-index: 2;
+  z-index: 3;
   animation: 0.4s show ease;
+  -webkit-animation: 0.4s show ease;
+  -o-animation: 0.4s show ease;
 }
 
 /* кнопочка закрытия модального окна */

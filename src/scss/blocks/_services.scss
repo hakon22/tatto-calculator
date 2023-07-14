@@ -27,6 +27,7 @@
       background-image: url("../images/services/point.svg");
       background-repeat: no-repeat;
       background-size: cover;
+      z-index: 1;
 
       &.active {
         background-image: url("../images/services/cursor.png");
@@ -172,7 +173,7 @@
       .services__h2 {
         font-family: Constantine, sans-serif;
   
-        @include fonty(16px, 400, 17.12px);
+        @include fonty(1.37rem, 400, 1.07);
       }
     }
   }
@@ -264,7 +265,7 @@
           width: 2.2vw;
           height: 2.2vw;
           margin-right: 0.5rem;
-          bottom: 0.45vw;
+          bottom: 0.6vw;
         }
 
         p {
@@ -280,7 +281,8 @@
         column-gap: 1.33em;
 
         .active {
-          border-bottom: 2px solid #825890;
+          border-bottom: 2px solid $violet;
+          font-size: 1.2em;
         }
 
         li {
